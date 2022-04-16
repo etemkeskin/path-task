@@ -2,7 +2,7 @@
 
 1. Uygulama Authentication olarak JWT kullanılmıştır.
 2. Kullanıcı şifreleri **123456** olarak belirlenmiştir.
-3. Uygulamayıkurmak için ekteki sql dosyası veritabanına import edilmesi gerekiyor.
+3. Uygulamayı kurmak için ekteki sql dosyası veritabanına import edilmesi gerekiyor.
 4. İstek yapılırken  headerda token bilgisi gönderilmelidir.
     Authorization: Bearer {Token}
 
@@ -16,12 +16,12 @@ ___
 
 #### /api/orders    methods={"GET"}
 
-Tüm siparişleri getirme
+Tüm siparişleri gösterme
 
 ---
 #### /api/orders/{id}    methods={"GET"}
 
-Sipariş detaylarını getirmek.
+Sipariş detaylarını gösterme.
 
 ---
 #### /api/orders    methods={"POST"}
