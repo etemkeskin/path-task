@@ -3,6 +3,8 @@
 1. Uygulama Authentication olarak JWT kullanılmıştır.
 2. Kullanıcı şifreleri **123456** olarak belirlenmiştir.
 3. Uygulamayıkurmak için ekteki sql dosyası veritabanına import edilmesi gerekiyor.
+4. İstek yapılırken  headerda token bilgisi gönderilmelidir.
+    Authorization: Bearer {Token}
 
 ### APILER
 
@@ -14,13 +16,17 @@ ___
 
 #### /api/orders    methods={"GET"}
 
+Tüm siparişleri getirme
+
 ---
 #### /api/orders/{id}    methods={"GET"}
 
-Get order details.
+Sipariş detaylarını getirmek.
 
 ---
 #### /api/orders    methods={"POST"}
+
+Sipariş oluşturma
 
 {
     "orderCode": "sdfkokcs5158",
@@ -41,6 +47,8 @@ Get order details.
 ---
 
 #### /api/orders    methods={"PUT"}
+
+Sipariş Güncellemesi
 
 {
     "orderCode": "sdfkokcs5158",
