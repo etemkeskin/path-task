@@ -37,7 +37,9 @@ Get order details.
         }
         ]
 }
+
 ---
+
 #### /api/orders    methods={"PUT"}
 
 {
